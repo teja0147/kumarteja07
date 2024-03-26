@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internal</title>
+ <script>
+	function greet(){
+	    alert('Your hand looks heavy, can I hold it for you?');
+	}
+</script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+           
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+          
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+   
+
+<body>
+<div class = "container">
+    <h1>Internal JavaScript</h1>
+
+    <p><strong>About internal JavaScript:</strong></p>
+    <p><strong><u>Embedded within HTML:</u></strong> Internal JavaScript is written directly within the HTML document, making it convenient for small scripts or scripts specific to that particular page.</p>
+    <p><strong><u>Script Tags:</u></strong> To include internal JavaScript in an HTML document, you use <code>&lt;script&gt;</code> tags. These tags can be placed in the <code>&lt;head&gt;</code> section, the <code>&lt;body&gt;</code> section, or both. Placing the script in the <code>&lt;head&gt;</code> section ensures that it loads before the page content, while placing it in the <code>&lt;body&gt;</code> section allows the page content to load first.</p>
+    <p><strong><u>Event Handlers:</u></strong> Internal JavaScript is often used to attach event handlers directly to HTML elements. For example, you can use the <code>onclick</code> attribute to specify JavaScript code to execute when a user clicks on a particular element.</p>
+    <p><strong><u>Access to DOM:</u></strong> Since internal JavaScript is embedded within the HTML document, it has direct access to the Document Object Model (DOM) of the page. This allows it to manipulate the structure, content, and style of the page dynamically.</p>
+    <p><strong><u>Execution Order:</u></strong> Internal JavaScript executes in the order it appears in the HTML document. Scripts placed in the <code>&lt;head&gt;</code> section are executed before those in the <code>&lt;body&gt;</code> section.</p>
+    <p><strong><u>Pros and Cons:</u></strong> Internal JavaScript can be convenient for small scripts or scripts specific to a single page since it's included directly within the HTML. However, for larger scripts or scripts used across multiple pages, it's often better to use external JavaScript files to separate concerns and improve maintainability.</p>
+
+<button onclick="greet()"><center>Click me</center></button>
+</div>
+</body>
+</html>
